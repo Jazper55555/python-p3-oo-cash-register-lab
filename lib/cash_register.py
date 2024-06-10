@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 class CashRegister:
   def __init__(self, discount=0) -> None:
     self.discount = discount
@@ -31,9 +30,3 @@ class CashRegister:
       self.total -= last_transaction
       self.transactions.pop()
       return self.total
-
-CashRegister().add_item('luca', 5, 5)
-CashRegister().add_item('andrea', 10, 5)
-CashRegister().void_last_transaction()
-
-breakpoint()
